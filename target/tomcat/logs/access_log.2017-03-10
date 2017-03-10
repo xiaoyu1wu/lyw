@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:00:05 +0800] "GET /lyw/admin/getAdminMessage.do HTTP/1.1" 200 75 http-bio-8080-exec-1 1312
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:00:14 +0800] "GET /lyw/admin/getAdminMessage.do HTTP/1.1" 200 75 http-bio-8080-exec-2 4
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:00:15 +0800] "GET /lyw/admin/getAdminMessage.do HTTP/1.1" 200 75 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:32:24 +0800] "GET /lyw/recruit/recentRecruit.do HTTP/1.1" 404 949 http-bio-8080-exec-5 47
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:32:30 +0800] "GET /lyw/recruit/recentRecruit.do HTTP/1.1" 404 949 http-bio-8080-exec-6 3
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:32:30 +0800] "GET /lyw/recruit/index.js.map HTTP/1.1" 404 999 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:33:08 +0800] "GET /lyw/recruit/recentRecruit.do HTTP/1.1" 200 11025 http-bio-8080-exec-1 1817
+0:0:0:0:0:0:0:1 - - [10/Mar/2017:01:33:09 +0800] "GET /lyw/recruit/index.js.map HTTP/1.1" 404 999 http-bio-8080-exec-2 3
