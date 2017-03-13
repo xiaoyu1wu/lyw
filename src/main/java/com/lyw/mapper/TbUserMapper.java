@@ -28,4 +28,8 @@ public interface TbUserMapper {
     int updateByPrimaryKeySelective(TbUser record);
 
     int updateByPrimaryKey(TbUser record);
+
+	int findUserIdByUsername(String username);
+
+	int findUserIdByUsernameAndPassword(TbUser user);
 }
