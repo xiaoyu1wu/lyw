@@ -312,4 +312,14 @@
     order by recr_date desc
     limit 10
   </select>
+  
+  <!-- 根据关键字搜索职位 -->
+  <select id="selectByRecrJob" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_recruit
+    where recr_job like CONCAT('%',#{keyword, jdbcType=VARCHAR},'%')
+    order by recr_date desc
+    limit 10
+  </select>
 </mapper>

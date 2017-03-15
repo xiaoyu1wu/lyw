@@ -112,4 +112,14 @@ public class TbRecruit {
     public void setRecrState(Integer recrState) {
         this.recrState = recrState;
     }
+
+	@Override
+	public String toString() {
+		return "TbRecruit [recrId=" + recrId + ", compName=" + compName + ", compId=" + compId + ", recrJob=" + recrJob
+				+ ", recrPlace=" + recrPlace + ", recrSalary=" + recrSalary + ", recrDegree=" + recrDegree
+				+ ", recrDuty=" + recrDuty + ", recrDemand=" + recrDemand + ", recrDate=" + recrDate + ", recrState="
+				+ recrState + "]";
+	}
+    
+    
 }

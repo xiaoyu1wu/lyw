@@ -30,4 +30,6 @@ public interface TbRecruitMapper {
     int updateByPrimaryKey(TbRecruit record);
 
 	List<TbRecruit> selectByRecruitDate();
+
+	List<TbRecruit> selectByRecrJob(String keyword);
 }

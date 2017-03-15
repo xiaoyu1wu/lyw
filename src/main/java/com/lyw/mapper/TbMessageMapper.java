@@ -28,4 +28,13 @@ public interface TbMessageMapper {
     int updateByPrimaryKeySelective(TbMessage record);
 
     int updateByPrimaryKey(TbMessage record);
+
+    //获取所有的系统消息
+	List<TbMessage> getAllSystemMessage();
+
+	//获取所有的推荐消息
+	List<TbMessage> getAllRecommendMessage();
+
+	//根据用户获取招聘信息
+	List<TbMessage> getRecruitMessage(Integer userId);
 }

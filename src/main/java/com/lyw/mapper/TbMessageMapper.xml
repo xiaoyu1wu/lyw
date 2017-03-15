@@ -272,4 +272,25 @@
       send_role = #{sendRole,jdbcType=VARCHAR}
     where mess_id = #{messId,jdbcType=INTEGER}
   </update>
+  
+  <!-- 获取所有的系统消息 -->
+  <select id="getAllSystemMessage" resultMap="BaseResultMap" >
+      SELECT * from tb_message 
+	  WHERE send_role = 'all' 
+      and mess_type = 'system' 
+  </select>
+  
+   <!-- 获取所有的推荐消息 -->
+  <select id="getAllRecommendMessage" resultMap="BaseResultMap" >
+      SELECT * from tb_message 
+	  WHERE mess_type = 'recommend' 
+  </select>
+  
+   <!-- 获取所有的推荐消息 -->
+  <select id="getRecruitMessage" resultMap="BaseResultMap" >
+      SELECT * from tb_message 
+	  WHERE mess_type = 'recruit' 
+	  and user_id = #{userId}
+  </select>
+  
 </mapper>

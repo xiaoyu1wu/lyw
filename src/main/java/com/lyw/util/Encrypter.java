@@ -33,6 +33,6 @@ public class Encrypter {
     }
 	
 	public static void main(String[] args) {
-        System.out.println(Encrypter.encryption("XXXX"));
+        System.out.println(Encrypter.encryption("XXXX").length());
     }
 }

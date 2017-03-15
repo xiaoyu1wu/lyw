@@ -26,4 +26,8 @@ public class RecruitService {
 	public List<TbRecruit> getRecentRecruit(){
 		return tbRecruitMapper.selectByRecruitDate();
 	}
+
+	public List<TbRecruit> findJobByRecrJob(String keyword) {
+		return tbRecruitMapper.selectByRecrJob(keyword);
+	}
 }

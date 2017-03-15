@@ -32,4 +32,8 @@ public interface TbUserMapper {
 	int findUserIdByUsername(String username);
 
 	int findUserIdByUsernameAndPassword(TbUser user);
+
+	int findUserIdByUserEmail(String email);
+
+	int findUserIdByUserEmailAndPassword(String userEmail, String password);
 }
