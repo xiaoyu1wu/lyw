@@ -26,6 +26,11 @@ public class MyService {
 	@Autowired
 	private TbResumeMapper tbResumeMapper;
 	
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 */
 	public TbUser getUserById(int id){
 		return tbUserMapper.selectByPrimaryKey(id);
 	}
