@@ -109,4 +109,13 @@ public class UserController {
 		
 	}
 
+	@RequestMapping(value="/redirectLogin")
+	public String redirectLogin(){
+		return "/user/login";
+	}
+	
+	@RequestMapping(value="/redirectRegedit")
+	public String redirectRegedit(){
+		return "/user/regedit";
+	}
 }
