@@ -21,3 +21,4 @@ public class RecruitController {
 		return recruitService.getRecentRecruit();
 	}
 }
+
