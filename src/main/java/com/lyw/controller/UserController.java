@@ -36,7 +36,7 @@ public class UserController {
 		
 		//不存在，插入数据,设置到session中，存活周期为10分钟，提示注册成功，跳转到主页面
 		if(userId == -1){
-			model1 = new ModelAndView("/user/index");
+			model1 = new ModelAndView("/index");
 			
 			userService.saveUser(user);
 			
@@ -48,7 +48,7 @@ public class UserController {
 		}
 		//如果用户名已经存在，提示“该用户名已被注册”,停留在当前页面
 		else{
-			model1 = new ModelAndView("/user/regedit");
+			model1 = new ModelAndView("/regedit");
 			model1.addObject("retCode", 0);
 			model1.addObject("message", "该用户名已被注册");
 			return model1;
@@ -61,7 +61,7 @@ public class UserController {
 		ModelAndView model1 = null;
 		
 		if(null == user.getUserEmail() || "" == user.getUserPassword()){
-			model1 = new ModelAndView("/user/login");
+			model1 = new ModelAndView("/login");
 			model1.addObject("retCode", 0);
 			model1.addObject("message", "邮箱或密码必须填写");
 			return model1;
@@ -77,12 +77,12 @@ public class UserController {
 				}
 				model1.addObject("retCode", 1);
 				model1.addObject("message", "登录成功");
-				model1.setViewName("/user/index");
+				model1.setViewName("/index");
 			}
 			else{
 				model1.addObject("retCode", 0);
 				model1.addObject("message", "用户名或者密码错误");
-				model1.setViewName("/user/login");
+				model1.setViewName("/login");
 			}
 			return model1;
 		}
@@ -92,7 +92,7 @@ public class UserController {
 	//首页
 	@RequestMapping(value = "/index")
 	public ModelAndView index(){
-		ModelAndView model = new ModelAndView("/user/index");
+		ModelAndView model = new ModelAndView("/index");
 		return model;
 	}
 	
@@ -111,11 +111,11 @@ public class UserController {
 
 	@RequestMapping(value="/redirectLogin")
 	public String redirectLogin(){
-		return "/user/login";
+		return "/login";
 	}
 	
 	@RequestMapping(value="/redirectRegedit")
 	public String redirectRegedit(){
-		return "/user/regedit";
+		return "/regedit";
 	}
 }
