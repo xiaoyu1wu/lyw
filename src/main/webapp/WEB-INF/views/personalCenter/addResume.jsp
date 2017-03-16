@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <%
@@ -14,7 +17,7 @@
 <html>
 
 <head>
-    <title>简历详情</title>
+    <title>添加简历</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -59,6 +62,7 @@
 
                         </ul>
                     </li>
+
                     <!--下拉菜单-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息<span class="caret"></span></a>
@@ -137,7 +141,7 @@
                         <div class="form-group">
                             <label for="inputpassword" class="col-sm-2 control-label">姓名</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="name" placeholder="姓名">
+                                <input type="password" class="form-control" id="name" placeholder="">
                             </div>
                         </div>
                         <div class="form-group">
@@ -156,7 +160,7 @@
                         <div class="form-group">
                             <label for="inputpassword" class="col-sm-2 control-label">手机号码</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="tele" placeholder="18818118">
+                                <input type="password" class="form-control" id="tele" placeholder="18818118">
                             </div>
                         </div>
                         <div class="form-group">
@@ -173,31 +177,31 @@
                         <div class="form-group">
                             <label for="inputpassword" class="col-sm-2 control-label">出生日期</label>
                             <div class="col-sm-8">
-                                <input type="datetime" class="form-control" id="birthday" placeholder="生日">
+                                <input type="date" class="form-control" id="birthday" placeholder="生日">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputpassword" class="col-sm-2 control-label">参加工作时间</label>
                             <div class="col-sm-8">
-                                <input type="datatime" class="form-control" id="jobtime" placeholder="参加工作时间">
+                                <input type="date" class="form-control" id="jobtime" placeholder="参加工作时间">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputpassword" class="col-sm-2 control-label">户口所在地</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="hukou" placeholder="广州">
+                                <input type="password" class="form-control" id="hukou" placeholder="广州">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputpassword" class="col-sm-2 control-label">现居地</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="address" placeholder="广州">
+                                <input type="password" class="form-control" id="address" placeholder="广州">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputpassword" class="col-sm-2 control-label">求职岗位</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="qiuzhigangwei" placeholder="软件工程师">
+                                <input type="password" class="form-control" id="qiuzhigangwei" placeholder="软件工程师">
                             </div>
                         </div>
 
@@ -206,8 +210,7 @@
 
                             <h1>教育背景
                                 </h1>
-                            <textarea class="textmul">啊啊啊 啊啊啊
-
+                            <textarea class="textmul">
                             </textarea>
                         </div>
 
@@ -215,20 +218,18 @@
                         <div class="form-group">
                             <h1>工作/实习经历</h1>
                             <textarea class="textmul">
-                                抱抱抱抱吧
                             </textarea>
                         </div>
                         <hr/>
                         <div class="form-group">
                             <h1>项目经验</h1>
                             <textarea class="textmul">
-                                代付电费
                             </textarea>
                         </div>
                         <hr/>
                         <div class="form-group">
                             <h1>自我评价</h1>
-                            <textarea class="textmul">lpl
+                            <textarea class="textmul">
                             </textarea>
                         </div>
 
@@ -251,8 +252,6 @@
                     <div><img src="QQ%E5%9B%BE%E7%89%8720170313223735.jpg" alt="昵称"></img>
                     </div>
                     <label>姓名</label>
-
-
                 </div>
             </div>
         </div>

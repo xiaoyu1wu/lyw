@@ -14,7 +14,7 @@
 <html>
 
 <head>
-    <title>简历详情</title>
+    <title>我的投递</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -59,6 +59,7 @@
 
                         </ul>
                     </li>
+
                     <!--下拉菜单-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息<span class="caret"></span></a>
@@ -100,12 +101,11 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <!--导航栏结束-->
+    <!--大导航栏结束------------------------------------------------------------------------------------------------------------------------>
 
 
 
     <section>
-
         <div class="container">
             <div class="myinfoimg">
                 <div>
@@ -127,138 +127,29 @@
                         <li><a href="%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.html">修改密码</a></li>
                     </ul>
                 </div>
-                <!--个人信息导航栏结束-->
-                <!--                个人信息主界面-->
+                <!--个人信息导航栏结束----------------------------------------------------------------------------------------------->
+                <!--个人信息主界面----------------------------------------------------------------------------------------->
                 <div class="col-sm-8 sidebar">
 
-                    <form class="form-horizontal">
+                    <div class="myinfo"><a href="%E6%8A%95%E9%80%92%E8%AF%A6%E6%83%85.html">我的投递1</a><span>求职意向:java</span></div>
+                    <div class="myinfo"><a href="%E6%8A%95%E9%80%92%E8%AF%A6%E6%83%85.html">我的投递2</a><span>求职意向:java</span>
 
+                    </div>
 
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">姓名</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="name" placeholder="姓名">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label ">性别</label>
-                            <div class="col-sm-8">
-                                <label class="radio-inline">
-                                    <input type="radio" name="sex" id="inlineRadio1" value="option1">男
-
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="sex" id="inlineRadio2" value="option1">女
-
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">手机号码</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="tele" placeholder="18818118">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputE" class="col-sm-2 control-label">email：</label>
-                            <div class="col-sm-8">
-                                <input type="email" class="form-control" id="inputE" placeholder="">
-                                <datalist>
-                                    <option value="jinx_x@yeah.net">
-                                        <option value="saymor@163.com"></option>
-                                    </option>
-                                    </+datalist>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">出生日期</label>
-                            <div class="col-sm-8">
-                                <input type="datetime" class="form-control" id="birthday" placeholder="生日">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">参加工作时间</label>
-                            <div class="col-sm-8">
-                                <input type="datatime" class="form-control" id="jobtime" placeholder="参加工作时间">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">户口所在地</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="hukou" placeholder="广州">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">现居地</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="address" placeholder="广州">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">求职岗位</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="qiuzhigangwei" placeholder="软件工程师">
-                            </div>
-                        </div>
-
-                        <hr/>
-                        <div class="form-group">
-
-                            <h1>教育背景
-                                </h1>
-                            <textarea class="textmul">啊啊啊 啊啊啊
-
-                            </textarea>
-                        </div>
-
-                        <hr/>
-                        <div class="form-group">
-                            <h1>工作/实习经历</h1>
-                            <textarea class="textmul">
-                                抱抱抱抱吧
-                            </textarea>
-                        </div>
-                        <hr/>
-                        <div class="form-group">
-                            <h1>项目经验</h1>
-                            <textarea class="textmul">
-                                代付电费
-                            </textarea>
-                        </div>
-                        <hr/>
-                        <div class="form-group">
-                            <h1>自我评价</h1>
-                            <textarea class="textmul">lpl
-                            </textarea>
-                        </div>
+                    <div class="myinfo"><a href="%E6%8A%95%E9%80%92%E8%AF%A6%E6%83%85.html">我的投递3</a><span>求职意向:java</span></div>
 
 
 
 
 
-                        <div>
-                            <div class="row">
-                                <div class="save">
-                                    <button type="submit" class="btn btn-primary">保存修改</button>
-
-                                </div>
-                            </div>
-                        </div>
                     </form>
                 </div>
                 <!--        个人信息界面结束-->
-                <div class="myinfoimg">
-                    <div><img src="QQ%E5%9B%BE%E7%89%8720170313223735.jpg" alt="昵称"></img>
-                    </div>
-                    <label>姓名</label>
-
-
-                </div>
             </div>
         </div>
     </section>
 
-
+    <!-----页尾------------------------------------------------------------------------------------------------------------------------->
 
 
     <!--copyright-->

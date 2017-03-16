@@ -14,7 +14,7 @@
 <html>
 
 <head>
-    <title>简历详情</title>
+    <title>求职详情</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -100,7 +100,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <!--导航栏结束-->
+    <!--导航栏结束--------------------------------------------------------------------------------------------------------------->
 
 
 
@@ -116,7 +116,7 @@
                 <hr/>
 
             </div>
-            <!--个人信息左侧导航栏-->
+            <!--个人信息左侧导航栏------------------------------------------------------------------------------------>
             <div class="row">
                 <div class="col-sm-2 myinfonav">
                     <ul class="nav nav-pills nav-stacked">
@@ -127,8 +127,8 @@
                         <li><a href="%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.html">修改密码</a></li>
                     </ul>
                 </div>
-                <!--个人信息导航栏结束-->
-                <!--                个人信息主界面-->
+                <!--个人信息导航栏结束---------------------------------------------------------------------------->
+                <!--个人信息主界面---------------------------------------------------------------------------------->
                 <div class="col-sm-8 sidebar">
 
                     <form class="form-horizontal">
@@ -138,6 +138,18 @@
                             <label for="inputpassword" class="col-sm-2 control-label">姓名</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="name" placeholder="姓名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputpassword" class="col-sm-2 control-label">求职岗位</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="qiuzhigangwei" placeholder="软件工程师">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputpassword" class="col-sm-2 control-label">目标薪资</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="qiuzhigangwei" placeholder="8k">
                             </div>
                         </div>
                         <div class="form-group">
@@ -171,9 +183,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">出生日期</label>
+                            <label for="inputpassword" class="col-sm-2 control-label">发布日期</label>
                             <div class="col-sm-8">
-                                <input type="datetime" class="form-control" id="birthday" placeholder="生日">
+                                <input type="datetime" class="form-control" id="birthday" placeholder="发布日期">
                             </div>
                         </div>
                         <div class="form-group">
@@ -194,12 +206,7 @@
                                 <input type="text" class="form-control" id="address" placeholder="广州">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">求职岗位</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="qiuzhigangwei" placeholder="软件工程师">
-                            </div>
-                        </div>
+
 
                         <hr/>
                         <div class="form-group">
@@ -240,13 +247,15 @@
                             <div class="row">
                                 <div class="save">
                                     <button type="submit" class="btn btn-primary">保存修改</button>
-
+                                    <button type="submit" class="btn btn-primary">删除</button>
                                 </div>
                             </div>
                         </div>
+
+
                     </form>
                 </div>
-                <!--        个人信息界面结束-->
+                <!--------------------个人信息界面结束，以下为头像信息------------------------------------------------------->
                 <div class="myinfoimg">
                     <div><img src="QQ%E5%9B%BE%E7%89%8720170313223735.jpg" alt="昵称"></img>
                     </div>
@@ -261,7 +270,7 @@
 
 
 
-    <!--copyright-->
+    <!--copyright-------------------------------------------------------------------------------------------------------->
     <nav class="navbar-fixed-bottom">
         <div class="copyright ">
             <div class="container">
