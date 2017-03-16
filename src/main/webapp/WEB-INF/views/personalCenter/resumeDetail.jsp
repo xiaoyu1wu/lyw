@@ -1,9 +1,20 @@
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 
 <html>
 
 <head>
-    <title>我的</title>
+    <title>简历详情</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +25,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
     <link href="../project_frontpage.css" rel="stylesheet" type="text/css">
-
     <link href="myinfo.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -49,7 +59,6 @@
 
                         </ul>
                     </li>
-
                     <!--下拉菜单-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息<span class="caret"></span></a>
@@ -63,16 +72,13 @@
                     </li>
                     <!--下拉菜单-->
                     <li class="dropdown">
-                        <a href="%E6%88%91%E7%9A%84.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="%E6%88%91%E7%9A%84%E6%B1%82%E8%81%8C.html">我的求职</a></li>
                             <li><a href="%E6%88%91%E7%9A%84%E6%8A%95%E9%80%92.html">我的投递</a></li>
                             <li><a href="%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.html">修改密码</a></li>
                             <li><a href="%E6%88%91%E7%9A%84%E7%AE%80%E5%8E%86.html">我的简历</a></li>
-                            <!--
-                            <li role="separator" class="divider"></li>
-<li><a href="#">Separated link</a></li>
--->
+
                         </ul>
                     </li>
 
@@ -99,6 +105,7 @@
 
 
     <section>
+
         <div class="container">
             <div class="myinfoimg">
                 <div>
@@ -126,51 +133,13 @@
 
                     <form class="form-horizontal">
 
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">昵称</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="nickname" placeholder="昵称">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">职业</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="position" placeholder="软件开发工程师">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">地址</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="address" placeholder="所在地">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">擅长领域</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="goodat" placeholder="擅长领域">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputpassword" class="col-sm-2 control-label">电话</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="tele" placeholder="电话">
-                            </div>
-                        </div>
-
-
 
                         <div class="form-group">
-                            <label for="inputE" class="col-sm-2 control-label">email：</label>
+                            <label for="inputpassword" class="col-sm-2 control-label">姓名</label>
                             <div class="col-sm-8">
-                                <input type="email" class="form-control" id="inputE" placeholder="">
-                                <datalist>
-                                    <option value="jinx_x@yeah.net">
-                                        <option value="saymor@163.com"></option>
-                                    </option>
-                                    </+datalist>
+                                <input type="text" class="form-control" id="name" placeholder="姓名">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="col-sm-2 control-label ">性别</label>
                             <div class="col-sm-8">
@@ -184,21 +153,88 @@
                                 </label>
                             </div>
                         </div>
-
-
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">兴趣</label>
+                            <label for="inputpassword" class="col-sm-2 control-label">手机号码</label>
                             <div class="col-sm-8">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" name="inlineRadioOptions" id="inlineCheckbox1" value="option1">玩游戏
-
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" name="inlineRadioOptions" id="inlineCheckbox2" value="option2">打代码
-                                </label>
+                                <input type="text" class="form-control" id="tele" placeholder="18818118">
                             </div>
-
                         </div>
+                        <div class="form-group">
+                            <label for="inputE" class="col-sm-2 control-label">email：</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="inputE" placeholder="">
+                                <datalist>
+                                    <option value="jinx_x@yeah.net">
+                                        <option value="saymor@163.com"></option>
+                                    </option>
+                                    </+datalist>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputpassword" class="col-sm-2 control-label">出生日期</label>
+                            <div class="col-sm-8">
+                                <input type="datetime" class="form-control" id="birthday" placeholder="生日">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputpassword" class="col-sm-2 control-label">参加工作时间</label>
+                            <div class="col-sm-8">
+                                <input type="datatime" class="form-control" id="jobtime" placeholder="参加工作时间">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputpassword" class="col-sm-2 control-label">户口所在地</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="hukou" placeholder="广州">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputpassword" class="col-sm-2 control-label">现居地</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="address" placeholder="广州">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputpassword" class="col-sm-2 control-label">求职岗位</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="qiuzhigangwei" placeholder="软件工程师">
+                            </div>
+                        </div>
+
+                        <hr/>
+                        <div class="form-group">
+
+                            <h1>教育背景
+                                </h1>
+                            <textarea class="textmul">啊啊啊 啊啊啊
+
+                            </textarea>
+                        </div>
+
+                        <hr/>
+                        <div class="form-group">
+                            <h1>工作/实习经历</h1>
+                            <textarea class="textmul">
+                                抱抱抱抱吧
+                            </textarea>
+                        </div>
+                        <hr/>
+                        <div class="form-group">
+                            <h1>项目经验</h1>
+                            <textarea class="textmul">
+                                代付电费
+                            </textarea>
+                        </div>
+                        <hr/>
+                        <div class="form-group">
+                            <h1>自我评价</h1>
+                            <textarea class="textmul">lpl
+                            </textarea>
+                        </div>
+
+
+
+
 
                         <div>
                             <div class="row">
@@ -211,6 +247,13 @@
                     </form>
                 </div>
                 <!--        个人信息界面结束-->
+                <div class="myinfoimg">
+                    <div><img src="QQ%E5%9B%BE%E7%89%8720170313223735.jpg" alt="昵称"></img>
+                    </div>
+                    <label>姓名</label>
+
+
+                </div>
             </div>
         </div>
     </section>
