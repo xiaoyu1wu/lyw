@@ -28,4 +28,8 @@ public interface TbCompanyMapper {
     int updateByPrimaryKeySelective(TbCompany record);
 
     int updateByPrimaryKey(TbCompany record);
+
+	int findCompanyIdByEmail(String email);
+
+	int findCompanyIdByEmailAndPassword(TbCompany company);
 }

@@ -303,4 +303,9 @@
       comp_state = #{compState,jdbcType=INTEGER}
     where comp_id = #{compId,jdbcType=INTEGER}
   </update>
+  
+  <select id="findCompanyIdByEmail" parameterType="java.lang.String" resultType="java.lang.Integer" >
+      select IFNULL(MAX(comp_id), -1) as company_id from tb_company 
+	  where comp_email = #{email, jdbcType=VARCHAR}
+  </select>
 </mapper>

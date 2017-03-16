@@ -35,5 +35,5 @@ public interface TbUserMapper {
 
 	int findUserIdByUserEmail(String email);
 
-	int findUserIdByUserEmailAndPassword(String userEmail, String password);
+	int findUserIdByUserEmailAndPassword(TbUser user);
 }
