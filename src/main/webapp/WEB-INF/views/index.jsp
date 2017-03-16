@@ -61,9 +61,9 @@ body {
 						data-toggle="dropdown" role="button" aria-haspopup="true"
 						aria-expanded="false">消息<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">招聘消息</a></li>
-							<li><a href="#">推荐消息</a></li>
-							<li><a href="#">系统消息</a></li>
+							<li><a href="/lyw/message/getRecruitMessage.do">招聘消息</a></li>
+							<li><a href="/lyw/message/getRecommendMessage.do">推荐消息</a></li>
+							<li><a href="/lyw/message/getSystemMessage.do">系统消息</a></li>
 							<li><a href="#">消息详情</a></li>
 
 						</ul></li>

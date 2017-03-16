@@ -11,8 +11,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.lyw.domain.TbMessage;
+import com.lyw.domain.TbRecruit;
 import com.lyw.service.MessageService;
 
 @Controller
@@ -22,18 +24,27 @@ public class MessageController {
 	private MessageService msgService;
 	
 	@RequestMapping(value="/getSystemMessage", method = RequestMethod.GET)
-	public @ResponseBody List<TbMessage> getAllSysMsg(){
-		return msgService.getAllSysMsg();
+	public ModelAndView getAllSysMsg(){
+		ModelAndView model = new ModelAndView("/messageCenter/systemMessage");
+		List<TbMessage> messageList =  msgService.getAllSysMsg();
+		model.addObject("messageList", messageList);
+		return model;
 	}
 	
 	@RequestMapping(value="/getRecommendMessage", method = RequestMethod.GET)
-	public @ResponseBody List<TbMessage> getRecommendMessage(){
-		return msgService.getRecommendMessage();
+	public ModelAndView getRecommendMessage(){
+		ModelAndView model = new ModelAndView("/messageCenter/recommendMessage");
+		List<TbMessage> messageList =  msgService.getRecommendMessage();
+		model.addObject("messageList", messageList);
+		return model;
 	}
 	
 	@RequestMapping(value="/getRecruitMessage", method = RequestMethod.GET)
-	public @ResponseBody List<TbMessage> getRecruitMessage(Model model, HttpServletRequest request, HttpSession session){
+	public ModelAndView getRecruitMessage(HttpServletRequest request, HttpSession session){
 		Integer userId = (Integer) session.getAttribute("userId");
-		return msgService.getRecruitMessage(userId);
+		ModelAndView model = new ModelAndView("/messageCenter/recruitMessage");
+		List<TbMessage> messageList =  msgService.getRecruitMessage(userId);
+		model.addObject("messageList", messageList);
+		return model;
 	}
 }

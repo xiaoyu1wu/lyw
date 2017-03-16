@@ -46,6 +46,7 @@
 			<mvc:exclude-mapping path="/user/index.do"/>
 			<mvc:exclude-mapping path="/user/login.do"/>
 			<mvc:exclude-mapping path="/user/regedit.do"/>
+			<mvc:exclude-mapping path="/recruit/recentRecruit.do"/>
 			<bean class="com.lyw.interceptor.LoginInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
