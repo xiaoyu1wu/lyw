@@ -36,11 +36,12 @@ public class UserTest  extends TestCase{
 		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("spring_mybatis.xml");
 		UserService userService = (UserService) ac.getBean("userService");
 		TbUser user = new TbUser();
-		user.setUserName("吴奇隆");
+		user.setUserName("我的");
 		user.setUserPassword("993dcc672f511c3aeebcd99653d49e34");
-		user.setUserEmail("17116648@qq.com");
+		user.setUserEmail("49849166@qq.com");
 		int userId = userService.saveUser(user);
 		assertEquals(1, userId);
+		
 		userId = userService.findUserIdByUsernameAndPassword("刘诗诗", "993ddc672f511c3aeebcd99653d49e34");
 		assertEquals(2, userId);
 		
