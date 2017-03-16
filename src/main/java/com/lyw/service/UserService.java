@@ -43,9 +43,10 @@ public class UserService {
 	}
 
 	public int findUserIdByUserEmailAndPassword(String userEmail, String password) {
-		return tbUserMapper.findUserIdByUserEmailAndPassword(userEmail, password);
+		TbUser user = new TbUser();
+		user.setUserEmail(userEmail);
+		user.setUserPassword(password);
+		return tbUserMapper.findUserIdByUserEmailAndPassword(user);
 	}
-
-	
 
 }
