@@ -304,13 +304,13 @@
     where recr_id = #{recrId,jdbcType=INTEGER}
   </update>
   
-  <!-- 获取最近的招聘信息 -->
+  <!-- 获取最近的招聘信息(默认6条) -->
   <select id="selectByRecruitDate" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from tb_recruit
     order by recr_date desc
-    limit 10
+    limit 6
   </select>
   
   <!-- 根据关键字搜索职位 -->
