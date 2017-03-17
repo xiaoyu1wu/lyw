@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page isELIgnored="false"%>
 
 <%
 	String path = request.getContextPath();
@@ -18,14 +19,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="../js/jquery-3.1.1.min.js">
+   <script src="/lyw/js/jquery-3.1.1.min.js">
     </script>
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/lyw/css/bootstrap.min.css" type="text/css">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-    <link href="../project_frontpage.css" rel="stylesheet" type="text/css">
-    <link href="myinfo.css" rel="stylesheet" type="text/css">
+    <script src="/lyw/js/bootstrap.min.js"></script>
+    <link href="/lyw/css/project_frontpage.css" rel="stylesheet" type="text/css">
+
+    <link href="/lyw/css/myinfo.css" rel="stylesheet" type="text/css">
+    <link href="/lyw/css/xiaoxi.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -74,10 +77,10 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="%E6%88%91%E7%9A%84%E6%B1%82%E8%81%8C.html">我的求职</a></li>
-                            <li><a href="%E6%88%91%E7%9A%84%E6%8A%95%E9%80%92.html">我的投递</a></li>
-                            <li><a href="%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.html">修改密码</a></li>
-                            <li><a href="%E6%88%91%E7%9A%84%E7%AE%80%E5%8E%86.html">我的简历</a></li>
+                            <li><a href="/lyw/usermessage/myApplicationForJob">我的求职</a></li>
+                            <li><a href="/lyw/usermessage/myDeliver">我的投递</a></li>
+                            <li><a href=/lyw/usermessage/modifyPassword">修改密码</a></li>
+                            <li><a href="/lyw/usermessage/myResume">我的简历</a></li>
                             <!--
                             <li role="separator" class="divider"></li>
 <li><a href="#">Separated link</a></li>
@@ -111,7 +114,7 @@
         <div class="container">
             <div class="myinfoimg">
                 <div>
-                    <a href="%E6%88%91%E7%9A%84.html"><img src="1461659538522276.png" alt="昵称"></img>
+                   <a href="/lyw/usermessage/personCenter.do"><img src="/lyw/imgs/1461659538522276.png" alt="昵称"></img>
                     </a>
                 </div>
                 <label>昵称</label>
@@ -122,24 +125,21 @@
             <div class="row">
                 <div class="col-sm-2 myinfonav">
                     <ul class="nav nav-pills nav-stacked">
-                        <li><a href="%E6%88%91%E7%9A%84%E7%AE%80%E5%8E%86.html">我的简历</a></li>
-                        <li><a href="%E6%88%91%E7%9A%84%E6%B1%82%E8%81%8C.html">我的求职</a></li>
-                        <li><a href="%E6%88%91%E7%9A%84%E6%8A%95%E9%80%92.html">我的投递</a></li>
+                          <li><a href="/lyw/usermessage/myResume.do">我的简历</a></li>
+                        <li><a href="/lyw/usermessage/myApplicationForJob.do">我的求职</a></li>
+                        <li><a href="/lyw/usermessage/myDeliver.do">我的投递</a></li>
 
-                        <li><a href="%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.html">修改密码</a></li>
+                        <li><a href="/lyw/usermessage/modifyPassword.do">修改密码</a></li>
                     </ul>
                 </div>
                 <!--个人信息导航栏结束-->
                 <!--                个人信息主界面-->
                 <div class="col-sm-8 sidebar">
 
-                    <div class="myinfo"><a href="%E6%B1%82%E8%81%8C%E8%AF%A6%E6%83%85.html">我的求职1</a><span>求职意向:java</span></div>
-                    <div class="myinfo"><a href="%E6%B1%82%E8%81%8C%E8%AF%A6%E6%83%85.html">我的求职2</a><span>求职意向:java</span>
-
-                    </div>
-
-                    <div class="myinfo"><a href="%E6%B1%82%E8%81%8C%E8%AF%A6%E6%83%85.html">我的求职3</a><span>求职意向:java</span></div>
-
+				<c:forEach items="${hunts }" var="hunt">
+                    <div class="myinfo"><a href="/lyw/usermessage/searchJobDetail.do?huntId=${hunt.huntId }"><span>求职意向:${hunt.huntJob }</span></a></div>
+				</c:forEach>
+                  
 
 
 

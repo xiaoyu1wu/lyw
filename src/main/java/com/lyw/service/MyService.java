@@ -41,6 +41,10 @@ public class MyService {
 		return tbHuntMapper.selectByExample(example);
 	}
 	
+	public TbHunt getHuntById(Integer huntId){
+		return tbHuntMapper.selectByPrimaryKey(huntId);
+	}
+	
 	public void changeUserName(Integer userId, String name){
 		TbUser user = new TbUser();
 		user.setUserId(userId);
@@ -69,5 +73,13 @@ public class MyService {
 	
 	public TbResume getResumeMessage(Integer resumeId){
 		return tbResumeMapper.selectByPrimaryKey(resumeId);
+	}
+	
+	public void updateMyMessage(TbUser user){
+		tbUserMapper.updateByPrimaryKeySelective(user);
+	}
+	
+	public void addResume(TbResume resume){
+		tbResumeMapper.insert(resume);
 	}
 }
