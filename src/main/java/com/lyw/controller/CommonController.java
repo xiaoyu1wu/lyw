@@ -21,8 +21,11 @@ public class CommonController {
 	@Autowired
 	private RecruitService recruitService;
 	
-	@RequestMapping(value="/searchJob/{keyword}", method=RequestMethod.GET)
-	public @ResponseBody List<TbRecruit> searchJob(@PathVariable String keyword){
-		return recruitService.findJobByRecrJob(keyword);
+	@RequestMapping(value="/searchJob", method=RequestMethod.GET)
+	public ModelAndView searchJob(String keyword){
+		ModelAndView model = new ModelAndView("/common/searchForJob");
+		List<TbRecruit>  recruits = recruitService.findJobByRecrJob(keyword);
+		model.addObject("recruitList", recruits);
+		return model;
 	}
 }

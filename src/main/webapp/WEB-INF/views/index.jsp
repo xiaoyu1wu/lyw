@@ -82,9 +82,9 @@ body {
 -->
 						</ul></li>
 
-					<form class="navbar-form navbar-left">
+					<form action="/lyw/common/searchJob.do"  method="get" class="navbar-form navbar-left">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
+							<input name="keyword" type="text" class="form-control" placeholder="Search">
 						</div>
 						<button type="submit" class="btn btn-default">搜索</button>
 					</form>

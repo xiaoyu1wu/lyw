@@ -1,0 +1,18 @@
+.salary {
+    display: inline-block;
+    text-align: center;
+}
+
+.workplace {
+    display: inline-block;
+}
+
+.form-control {
+    display: inline-block;
+    width: 200px;
+}
+
+.textmul {
+    width: 100%;
+    height: 100px;
+}

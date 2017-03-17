@@ -109,10 +109,10 @@
 					</form>
 
 
-					<li class="rightpo"><a href="../shen/shensx/html/login.html">登录
+					<li class="rightpo"><a href="/lyw/user/login.do">登录
 							<span class="sr-only">(current)</span>
 					</a></li>
-					<li class="rightpo"><a href="../shen/shensx/html/zc.html">注册</a></li>
+					<li class="rightpo"><a href="/lyw/user/regedit.do">注册</a></li>
 
 				</ul>
 			</div>
