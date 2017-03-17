@@ -19,7 +19,8 @@ public class MyController {
 	private MyService myService;
 	
 	private Integer getUserIdBySession(HttpServletRequest request){
-		return (Integer) request.getSession().getAttribute("userId");
+//		return (Integer) request.getSession().getAttribute("userId");
+		return 4;
 	}
 	
 	@RequestMapping("mymessage")
@@ -64,13 +65,17 @@ public class MyController {
 	
 	@RequestMapping("myResume")
 	public String enterMyResume(HttpServletRequest request){
-//		request.setAttribute("resumes", myService.getMyResumes(getUserIdBySession(request)));
-		request.setAttribute("resumes", myService.getMyResumes(4));
+		request.setAttribute("resumes", myService.getMyResumes(getUserIdBySession(request)));
+//		request.setAttribute("resumes", myService.getMyResumes(4));
 		return "/personalCenter/myResume";
 	}
 	
 	@RequestMapping("myResumeDetail")
 	public String myResumeDetail(HttpServletRequest request, Integer resumeId){
+		TbUser user = myService.getUserById(getUserIdBySession(request));
+		TbResume resume = myService.getResumeMessage(resumeId);
+		request.setAttribute("user", user);
+		request.setAttribute("resume", resume);
 		return "/personalCenter/resumeDetail";
 	}
 	
@@ -93,7 +98,7 @@ public class MyController {
 	
 	@RequestMapping("myApplicationForJob")
 	public String enterMyApplicationForJob(HttpServletRequest request){
-		request.setAttribute("hunts", myService.getMyHunts(4));
+		request.setAttribute("hunts", myService.getMyHunts(getUserIdBySession(request)));
 		return "/personalCenter/myApplicationForJob";
 	}
 	
@@ -103,8 +108,16 @@ public class MyController {
 		return "/personalCenter/myApplicationForJob";
 	}
 	
+	@RequestMapping("modifyPasswordExeu")
+	public String enterModifyPasswordExeu(String oldpassword, String newpassword,  HttpServletRequest request){
+		myService.changePassword(getUserIdBySession(request), oldpassword, newpassword);
+		return "redirect:modifyPassword.do";
+		
+	}
+	
 	@RequestMapping("modifyPassword")
-	public String enterModifyPassword(){
+	public String enterModifyPassword(HttpServletRequest request){
 		return "/personalCenter/modifyPassword";
+		
 	}
 }

@@ -115,7 +115,7 @@
         <div class="container">
             <div class="myinfoimg">
                 <div>
-                    <a href="/lyw/usermessage/personCenter"><img src="/lyw/imgs/1461659538522276.png" alt="昵称"></img>
+                    <a href="/lyw/usermessage/personCenter.do"><img src="/lyw/imgs/1461659538522276.png" alt="昵称"></img>
                     </a>
                 </div>
                 <label>昵称</label>

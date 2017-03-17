@@ -209,7 +209,7 @@
 
                             <h1>教育背景
                                 </h1>
-                            <textarea class="textmul">啊啊啊 啊啊啊
+                            <textarea class="textmul" name="education">${resume.education }
 
                             </textarea>
                         </div>
@@ -217,21 +217,21 @@
                         <hr/>
                         <div class="form-group">
                             <h1>工作/实习经历</h1>
-                            <textarea class="textmul">
-                                抱抱抱抱吧
+                            <textarea class="textmul" name="jobExperience">
+                                ${resume.jobExperience }
                             </textarea>
                         </div>
                         <hr/>
                         <div class="form-group">
                             <h1>项目经验</h1>
-                            <textarea class="textmul">
-                                代付电费
+                            <textarea class="textmul" name="projectExperience">
+                                ${resume.projectExperience }
                             </textarea>
                         </div>
                         <hr/>
-                        <div class="form-group">
+                        <div class="form-group" name="selfEvaluate">
                             <h1>自我评价</h1>
-                            <textarea class="textmul">lpl
+                            <textarea class="textmul">${resume.selfEvaluate }
                             </textarea>
                         </div>
 

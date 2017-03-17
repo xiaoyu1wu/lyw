@@ -114,7 +114,7 @@
         <div class="container">
             <div class="myinfoimg">
                 <div>
-                      <a href="/lyw/usermessage/personCenter"><img src="/lyw/imgs/1461659538522276.png" alt="昵称"></img>
+                      <a href="/lyw/usermessage/personCenter.do"><img src="/lyw/imgs/1461659538522276.png" alt="昵称"></img>
                     </a>
                 </div>
                 <label>昵称</label>
@@ -148,7 +148,7 @@
                     <div>
                         <div class="row">
                             <div class="save">
-                                <a href="/lyw/usermessage/addResumePage">
+                                <a href="/lyw/usermessage/addResumePage.do">
                                     <button type="submit" class="btn btn-primary">添加简历</button>
                                 </a>
                             </div>

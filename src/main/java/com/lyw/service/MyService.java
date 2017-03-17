@@ -58,7 +58,7 @@ public class MyService {
 		if(tbUserMapper.selectByExample(userExample).size()>0){
 			TbUser user = new TbUser();
 			user.setUserId(userId);
-			user.setUserPassword(newpssword);
+			user.setUserPassword(Encrypter.encryption(newpssword));
 			tbUserMapper.updateByPrimaryKeySelective(user);
 			return true;
 		}
