@@ -18,13 +18,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="../js/jquery-3.1.1.min.js">
+    <script src="/lyw/js/jquery-3.1.1.min.js">
     </script>
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/lyw/css/bootstrap.min.css" type="text/css">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-    <link href="../project_frontpage.css" rel="stylesheet" type="text/css">
+    <script src="/lyw/js/bootstrap.min.js"></script>
+    <link href="/lyw/project_frontpage.css" rel="stylesheet" type="text/css">
     <link href="myinfo.css" rel="stylesheet" type="text/css">
 
 </head>
