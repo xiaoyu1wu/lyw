@@ -72,10 +72,10 @@ body {
 						data-toggle="dropdown" role="button" aria-haspopup="true"
 						aria-expanded="false">我的<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">我的求职</a></li>
-							<li><a href="#">我的投递</a></li>
-							<li><a href="#">我的账户</a></li>
-							<li><a href="#">我的简历</a></li>
+						 <li><a href="/lyw/usermessage/myApplicationForJob">我的求职</a></li>
+                            <li><a href="/lyw/usermessage/myDeliver">我的投递</a></li>
+                            <li><a href=/lyw/usermessage/modifyPassword">修改密码</a></li>
+                            <li><a href="/lyw/usermessage/myResume">我的简历</a></li>
 							<!--
                             <li role="separator" class="divider"></li>
 <li><a href="#">Separated link</a></li>
